@@ -51,7 +51,7 @@ const AboutSection = () => {
                             </div>
 
                             {/* Orbiting icons */}
-                            {['⚛️', '🎯', '🚀', '💻'].map((icon, i) => (
+                            {[ '💻'].map((icon, i) => (
                                 <div
                                     key={i}
                                     className="absolute w-12 h-12 bg-black/60 backdrop-blur-sm border border-purple-400/50 rounded-full flex items-center justify-center text-xl"

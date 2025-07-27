@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import AnimatedSection from './AnimatedSection';
 import React from '../assets/react.svg';
+import Foto2 from '../assets/tegar2.JPG';
+import Foto3 from '../assets/tegar3.JPG';
+import Foto4 from '../assets/tegar4.JPG';
 
 const ProfessionSection = () => {
   const [currentProfession, setCurrentProfession] = useState(0);
@@ -309,7 +312,7 @@ const ProfessionSection = () => {
                       {currentProfession === 0 && (
                         <div className="w-full h-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center relative">
                           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzQjgyRjYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzR2LTRoLTJ2NGgtNHYyaDR2NGgydi00aDR2LTJoLTR6bTAtMzBWMGgtMnY0aC00djJoNHY0aDJWNmg0VjRoLTR6TTYgMzR2LTRINHY0SDB2Mmg0djRoMnYtNGg0di0ySDZ6TTYgNFYwSDR2NEgwdjJoNHY0aDJWNmg0VjRINnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20" />
-                          <div className="text-6xl sm:text-7xl md:text-8xl z-10 filter drop-shadow-lg">👨‍💻</div>
+                          <div className="text-6xl sm:text-7xl md:text-8xl z-10 filter drop-shadow-lg"><img src={Foto2}  className='aspect-square object-cover w-64 h-64 rounded-full border-4 border-white shadow-lg' alt="" /></div>
                           <div className="absolute bottom-4 right-4 w-8 h-8 bg-blue-500/30 rounded-full flex items-center justify-center">
                             <span className="text-lg">⚛️</span>
                           </div>
@@ -320,7 +323,7 @@ const ProfessionSection = () => {
                       {currentProfession === 1 && (
                         <div className="w-full h-full bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center relative">
                           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjRUY0NDQ0IiBmaWxsLW9wYWNpdHk9IjAuMSI+PHBhdGggZD0iTTIwIDIwLjVWMThIOHYtMmgxMnYtMi41TDggMTZsMTItMi41VjExSDhWOWgxMlY2LjVMOCA5bDEyLTIuNVY0SDhWMmgxMnYyLjVsMTIgMi41VjRIMjB2MmgxMnYySDB2Mi41bDEyLTIuNVY5SDIwdjJoMTJ2MkgyMHYyLjVsMTItMi41VjE2SDIweiIvPjwvZz48L3N2Zz4=')] opacity-20" />
-                          <div className="text-6xl sm:text-7xl md:text-8xl z-10 filter drop-shadow-lg">🔒</div>
+                          <div className="text-6xl sm:text-7xl md:text-8xl z-10 filter drop-shadow-lg"><img src={Foto3}  className=' aspect-square object-cover w-64 h-64 rounded-full border-4 border-white shadow-lg' alt="" /></div>
                           <div className="absolute bottom-4 right-4 w-8 h-8 bg-red-500/30 rounded-full flex items-center justify-center">
                             <span className="text-lg">🛡️</span>
                           </div>
@@ -331,31 +334,9 @@ const ProfessionSection = () => {
                       {currentProfession === 2 && (
                         <div className="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center relative">
                           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjOEI1Q0Y2IiBmaWxsLW9wYWNpdHk9IjAuMSI+PHBhdGggZD0iTTAgMGg4MHY4MEgwVjB6bTIwIDIwdjQwaDQwVjIwSDIwem0yMCAzNWExNSAxNSAwIDEgMSAwLTMwIDE1IDE1IDAgMCAxIDAgMzB6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PC9zdmc+')] opacity-20" />
-                          <div className="text-6xl sm:text-7xl md:text-8xl z-10 filter drop-shadow-lg">🤖</div>
+                          <div className="text-6xl sm:text-7xl md:text-8xl z-10 filter drop-shadow-lg"><img src={Foto4} alt="" className='aspect-square object-cover w-64 h-64 rounded-full border-4 border-white shadow-lg' /></div>
                           <div className="absolute bottom-4 right-4 w-8 h-8 bg-purple-500/30 rounded-full flex items-center justify-center">
                             <span className="text-lg">🧠</span>
-                          </div>
-                        </div>
-                      )}
-                      
-                      {/* Full Stack Developer Photo */}
-                      {currentProfession === 3 && (
-                        <div className="w-full h-full bg-gradient-to-br from-green-500/20 to-emerald-500/20 flex items-center justify-center relative">
-                          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjMTBCOTgxIiBmaWxsLW9wYWNpdHk9IjAuMSI+PHBhdGggZD0iTTU0LjYyNyAwbC44My44MjgtMS40MTUgMS40MTVMNTEuOCAwaDIuODI3ek01LjM3MyAwbC0uODMuODI4TDUuOTYgMi4yNDNMOC4yIDBINS4zNzN6TTQ4Ljk3IDBsMy42NTcgMy42NTctMS40MTQgMS40MTRMNDYuMTQzIDBoMi44Mjh6TTExLjAzIDBMNy4zNzIgMy42NTdsMS40MTQgMS40MTRMMTMuODU3IDBIMTEuMDN6Ii8+PC9nPjwvc3ZnPg==')] opacity-20" />
-                          <div className="text-6xl sm:text-7xl md:text-8xl z-10 filter drop-shadow-lg">⚡</div>
-                          <div className="absolute bottom-4 right-4 w-8 h-8 bg-green-500/30 rounded-full flex items-center justify-center">
-                            <span className="text-lg">🐳</span>
-                          </div>
-                        </div>
-                      )}
-                      
-                      {/* UI/UX Designer Photo */}
-                      {currentProfession === 4 && (
-                        <div className="w-full h-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 flex items-center justify-center relative">
-                          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI0Y1OUUwQiIgZmlsbC1vcGFjaXR5PSIwLjEiPjxwYXRoIGQ9Ik0wIDBoMTAwdjEwMEgwVjB6bTEwIDEwdjgwaDgwVjEwSDEwem0xMCAxMHY2MGg2MFYyMEgyMHptMTAgMTB2NDBoNDBWMzBIMzB6Ii8+PC9nPjwvc3ZnPg==')] opacity-20" />
-                          <div className="text-6xl sm:text-7xl md:text-8xl z-10 filter drop-shadow-lg">🎨</div>
-                          <div className="absolute bottom-4 right-4 w-8 h-8 bg-yellow-500/30 rounded-full flex items-center justify-center">
-                            <span className="text-lg">✨</span>
                           </div>
                         </div>
                       )}
