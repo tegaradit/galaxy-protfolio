@@ -5,17 +5,46 @@ import Instagram from '../assets/ig.svg'
 import Linkedin from '../assets/linkedin.svg';
 
 const ContactSection = () => {
+    const [successMessage, setSuccessMessage] = useState('');
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: ''
     });
-
-    const handleSubmit = (e) => {
+    const api = "http://localhost:3000/api/message"; // Ganti dengan URL endpoint API Anda
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        // Handle form submission
+
+        try {
+            const response = await fetch(`${api}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                const errData = await response.json();
+                throw new Error(errData.message || 'Failed to send message');
+            }
+
+            const result = await response.json();
+            console.log('Message sent successfully:', result);
+            setSuccessMessage('📨 Your message has been sent successfully!');
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
+            });
+        } catch (error) {
+            console.error('Error sending message:', error.message);
+            setSuccessMessage('❌ Failed to send message. Please try again.');
+        }
     };
+
+
 
     return (
         <AnimatedSection className="min-h-screen flex items-center justify-center py-20">
@@ -129,13 +158,18 @@ const ContactSection = () => {
                                     placeholder="Share your cosmic message..."
                                 />
                             </div>
-
+                            {successMessage && (
+                                <p className="text-center text-green-400 font-semibold mt-4">
+                                    {successMessage}
+                                </p>
+                            )}
                             <button
                                 type="submit"
                                 className="w-full px-6 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg text-white font-semibold hover:from-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/25"
                             >
                                 🚀 Send Transmission
                             </button>
+
                         </form>
                     </AnimatedSection>
                 </div>
