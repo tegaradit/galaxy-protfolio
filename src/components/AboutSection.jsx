@@ -11,20 +11,9 @@ const AboutSection = () => {
                         <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-orbitron">
                             About Me?
                         </h2>
-                        <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-                            <p>
-                                I'm a web developer born under the warm sun of Kebumen, Central Java — a humble corner of Indonesia with dreams that reach the stars.
-                            </p>
-                            <p>
-                                Fueled by curiosity and caffeine, I specialize in crafting digital systems that don't just function — they resonate. From building real-time applications to architecting backend systems that power massive platforms, my mission is clear: to turn complex ideas into intuitive, powerful experiences.
-                            </p>
-                            <p>
-                                In my journey through the code cosmos, I’ve explored various technologies like JavaScript, PHP, Node.js, and Laravel. I thrive on solving real-world problems — whether it's managing large-scale futsal tournaments, designing face recognition systems, or building AI tools for cybersecurity.
-                            </p>
-                            <p>When I'm not on the keyboard piloting the next app, you’ll find me contributing to open-source missions, experimenting with drones and IoT, or gazing into the digital nebula dreaming up my next innovation.
-                                Let’s build something extraordinary — together.</p>
-                        </div>
-
+                        <p>
+                      I’m a developer and cybersecurity from Kebumen, Indonesia — passionate about turning complex ideas into intuitive digital experiences. Skilled in JavaScript, PHP, Node.js, Python, Laravel and Penetration testing, I build systems that connect people and solve real-world problems. When I’m not coding, I explore open-source projects, IoT, and AI-driven tools for cybersecurity.
+                        </p>
                         <div className="grid grid-cols-2 gap-6 mt-8">
                             <div className="bg-black/30 backdrop-blur-sm border border-purple-500/30 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-300">
                                 <div className="text-3xl font-bold text-purple-400 font-orbitron">20+</div>

@@ -5,7 +5,7 @@ const ProjectsSection = () => {
     const [projects, setProjects] = useState([]);
     const [error, setError] = useState(null);
 
-    const API_URL = 'http://localhost:3000/api/portfolio'; // Ganti sesuai backend kamu
+    const API_URL = 'https://backend.tegar.site/api/portfolio'; // Ganti sesuai backend kamu
 
     useEffect(() => {
         const fetchProjects = async () => {
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
                             >
                                 <div className="aspect-video bg-gradient-to-br from-purple-900/50 to-blue-900/50 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-300">
                                     <img
-                                        src={`http://localhost:3000${project.image}`} // Ganti dengan domain backend kamu
+                                        src={`https://backend.tegar.site${project.image}`} // Ganti dengan domain backend kamu
                                         alt={project.title}
                                         className="w-full h-48 object-cover rounded-t"
                                     />

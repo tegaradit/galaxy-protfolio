@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Edit2, Trash2, Eye, EyeOff, Save, X, Upload, MessageCircle, FolderOpen, Lock, User, LogOut } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://backend.tegar.site'; // Ganti dengan URL backend kamu
 
 // Authentication utility
 const auth = {
